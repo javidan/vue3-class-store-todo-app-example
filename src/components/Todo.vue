@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import {toggleDone} from '@/commands/todo'
+import { toggleDone } from '@/commands/todo-commands'
 export default {
   name: 'Todo',
   setup(){

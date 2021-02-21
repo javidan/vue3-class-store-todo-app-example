@@ -2,12 +2,13 @@
   <div>
     <Todo :todo="todo" :key="index" v-for="(todo, index) in todos.items"/>
   </div>
-  <button @click="onAddTodo">Add </button>
+  <button @click="onAddTodo">Add</button>
 </template>
 
 <script>
 import Todo from './Todo'
-import {addTodo} from '../commands/todos'
+import {addTodo} from '../commands/todos-commands'
+
 export default {
   name: 'Todos',
   setup(){
